@@ -115,6 +115,64 @@ header {
     outline: auto;
 }
 
-.header-right img {
+.header-right img, .main-img {
     width: 688px;
+}
+
+/* MAIN */
+
+
+.sect1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8em;
+    padding: 4em 1em;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.sect1-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2em;
+    width: 90%;   
+}
+
+.sect1-left h1{
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    font-size: 2.4em;
+    color: var(--Very-Dark-Blue);
+}
+
+.sect1-left p {
+    font-family: var(--font-openSans);
+    font-size: 1.1em;
+    color: var(--Very-Dark-Blue);
+    width: 88%;
+}
+
+.sect1-link {
+    
+    gap: 8px;
+    font-family: var(--font-openSans);
+    
+}
+
+.sect1-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--Moderate-Cyan);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--Moderate-Cyan);
+}
+.arrow {
+    width: 18px;
 }
