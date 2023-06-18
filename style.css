@@ -146,22 +146,19 @@ header {
 .sect1-left h1{
     font-family: var(--font-raleway);
     font-weight: 700;
-    font-size: 2.4em;
+    font-size: 2.3em;
     color: var(--Very-Dark-Blue);
 }
 
 .sect1-left p {
     font-family: var(--font-openSans);
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--Very-Dark-Blue);
     width: 88%;
 }
 
 .sect1-link {
-    
-    gap: 8px;
     font-family: var(--font-openSans);
-    
 }
 
 .sect1-link a {
@@ -172,7 +169,53 @@ header {
     text-decoration: none;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--Moderate-Cyan);
+    transition: all .1s;
+}
+.sect1-link a:hover {
+    opacity: .5;
 }
 .arrow {
     width: 18px;
+}
+
+.sect1-aspas {
+    background-color:rgb(253, 249, 249);
+    width: 360px;
+    padding: 16px 22px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    margin-top: 2.2em;
+}
+
+.sect1-aspas p {
+    font-family: var(--font-openSans);
+    font-size: 14px;
+    color: var(--Very-Dark-Blue);
+    letter-spacing: .6px;
+    line-height: 22px;
+}
+
+.sect1-aspas-profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sect1-aspas-profile p {
+    font-family: var(--font-raleway);
+    font-size: 12px;
+    font-weight: bold;
+    margin: -4px 0px;
+}
+
+.text-profile span {
+    font-family: var(--font-openSans);
+    font-size: 10px;
+    width: 100%;
+}
+
+
+.img-profile img {
+    width: 42px;
+    border-radius: 50%;
 }
