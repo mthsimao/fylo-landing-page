@@ -327,7 +327,7 @@ header {
 footer {
     background-color: var(--Very-Dark-Blue);
     color: var(--Light-Gray);
-    padding: 8em 2em 8em 2em;
+    padding: 8em 2em;
     font-family: var(--font-openSans);
 }
 
@@ -441,7 +441,7 @@ footer {
     }
 
     .header-right img, .main-img {
-        width: 388px;
+        width: 368px;
     }
 
     .sect1-aspas {
@@ -491,7 +491,7 @@ footer {
 
     .header-left h1 {
         text-align: center;
-        max-width: 420px;
+        max-width: 350px;
     }
     .header-left p {
         text-align: center;
@@ -499,9 +499,9 @@ footer {
     }
 
     .header-left h1, .sect1-left h1 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
-
+/*------------------------------------------*/
     .sect1-left {
         align-items: center;
         gap: 2em;
@@ -512,7 +512,7 @@ footer {
     }
 
     .sect1-left-p {
-        max-width: 365px;
+        width: 365px;
         color: var(--Desaturated-Blue);
     }
 
@@ -548,7 +548,7 @@ footer {
 
     .sect2-text h1 {
         text-align: center;
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .sect2-text p {
@@ -564,5 +564,113 @@ footer {
         width: 360px;
     }
     /*----------------------------------------*/
+
+    footer {
+        padding: 8em 2em 4em 2em;
+    }
     
+    .footer-all {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.2em;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1em;
+        width: auto;
+        padding: 0;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        width: 100%;
+    }
+
+    .footer-social ul { 
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        list-style-type: none;
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .logo-fylo {
+        width: 98px;
+    }
+
+    .nav-links ul {
+        gap: 1.4em;
+    }
+
+    .nav-links ul li a {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 2em 0;
+    }
+    .header-right img, .main-img {
+        width: 288px;
+    }
+
+    .header-left h1, .sect1-left h1 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+/*----------------------------------------*/
+    .sect1 {
+        padding: 3em 0;
+    }
+
+    .sect1-left-p {
+        width: 350px;
+    }
+
+    .sect1-aspas {
+        width: 360px;
+    }
+
+    .sect1-aspas > .sect1-aspas-p1 {
+        font-size: 13px;
+    }
+/*-----------------------------------------*/
+
+    .sect2 {
+        padding: 3em 1em;
+    }
+
+    .sect2-text p {
+        width: 320px;
+        font-size: 1em;
+    }
+
+    .buttons2 input[type=email], .buttons2 button{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .sect1-left-p {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+
+    .sect1-aspas {
+        width: 340px;
+    }
+
+    .img-profile img {
+        width: 46px;
+    }
 }
