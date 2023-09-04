@@ -26,6 +26,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 2.2em;
 }
 
 .nav {
@@ -141,7 +142,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 8em;
+    margin-top: 6em;
     padding: 4em 1em;
     background-image: url(images/bg-curve-desktop.svg);
     background-position: center center;
@@ -170,7 +171,7 @@ header {
     color: var(--Very-Dark-Blue);
 }
 
-.sect1-left p {
+.sect1-left-p {
     font-family: var(--font-openSans);
     font-size: 1em;
     color: var(--Very-Dark-Blue);
@@ -214,7 +215,6 @@ header {
     letter-spacing: .6px;
     line-height: 22px;
     padding: 8px 0;
-    width: 320px;
 }
 
 .sect1-aspas-profile{
@@ -412,4 +412,157 @@ footer {
 .instagram svg:hover, .twitter svg:hover, .facebook svg:hover {
     stroke: var(--Bright-Blue);
     border-color: var(--Bright-Blue);
+}
+
+/*finished desktop*/
+
+@media screen and (max-width:1270px) {
+    .header-left h1, .sect1-left h1 {
+        font-size: 1.8em;
+    }
+    .header-right img, .main-img {
+        width: 488px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .header-left h1, .sect1-left h1 {
+        font-size: 1.6em;
+    }
+
+    .header-left p {
+        font-size: 1em;
+    }
+
+    .header-right img, .main-img {
+        width: 388px;
+    }
+
+    .sect1-aspas {
+        width: 320px;
+    }
+
+    .sect1-flex {
+        gap: 0;
+    }
+
+    .buttons2 input[type=email] {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 816px) {
+    .sect2-text {
+        width: 320px;
+    }
+
+    .sect2-text h1 {
+        font-size: 1.8em;
+    }
+
+    .sect2-text p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .header-content, .sect1-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2.6em;
+    }
+
+    .nav-links ul {
+        gap: 2em;
+    }
+
+    .header-left {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-left h1 {
+        text-align: center;
+        max-width: 420px;
+    }
+    .header-left p {
+        text-align: center;
+        max-width: 340px;
+    }
+
+    .header-left h1, .sect1-left h1 {
+        font-size: 2em;
+    }
+
+    .sect1-left {
+        align-items: center;
+        gap: 2em;
+    }
+
+    .sect1-link {
+        text-align: center;
+    }
+
+    .sect1-left-p {
+        max-width: 365px;
+        color: var(--Desaturated-Blue);
+    }
+
+    .sect1-aspas {
+        width: 410px;
+        padding: 26px 24px;
+    }
+
+    .sect1-aspas > .sect1-aspas-p1 {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .sect1-aspas-profile {
+        margin-top: 12px;
+    }
+
+    .sect1-aspas-profile p {
+        color: var(--Very-Dark-Blue);
+        
+    }
+/*-----------------------------------------*/
+    .sect2-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .sect2-text {
+        width: auto;
+    }
+
+    .sect2-text h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .sect2-text p {
+        font-size: 1.2em;
+        text-align: center;
+        width: 380px;
+    }
+
+    .buttons2 {
+        align-items: center;
+    }
+    .buttons2 input[type=email], .buttons2 button{
+        width: 360px;
+    }
+    /*----------------------------------------*/
+    
 }
